@@ -1,4 +1,6 @@
-mercator_template
+Mercator templates
 =================
 
-mercator_template
+Šablony na web Mercator:
+1. Homepage
+2. Eshop
