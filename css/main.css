@@ -1,5 +1,6 @@
 @import url('icon-font.css');
 @import url('eshop.css');
+@import url('detail.css');
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin-ext);
 html,
 button,
@@ -67,7 +68,7 @@ textarea {
    Header Styles
    ========================================================================== */
 .left-up {
-	z-index: 11;
+	z-index: 12;
 	background: url(../img/left-up.png) no-repeat;
 	height: 55px;
 	overflow: hidden;
@@ -77,7 +78,7 @@ textarea {
 	left: -600px;
 }
 .right-down {
-	z-index: 11;
+	z-index: 13;
 	background: url(../img/right-down.png) no-repeat;
 	height: 55px;
 	overflow: hidden;
@@ -143,7 +144,33 @@ section.logo-menu {
 			text-align: center;
 			border-left: 1px solid rgb(230, 230, 230);
 		}
-		.logo-menu ul li.logo { width: 194px; border: none; }
+		.logo-menu ul li.logo {
+			width: 194px;
+			border: none;
+		}
+			.logo-menu ul li.logo a {
+				text-indent: -9999px;
+				background: url(../img/logo_mercator_sprite.png) no-repeat;
+				width: 194px;
+				height: 50px;
+				margin-top: 8px;
+				background-size: 180px 100px;
+				background-position: 0px 0px;
+				
+				transition: all ease .2s;
+				-webkit-transition: all ease .2s;
+				-moz-transition: all ease .2s;
+				-o-transition: all ease .2s;
+				-ms-transition: all ease .2s;
+			}
+			.logo-menu ul li.logo:hover a {
+				background: url(../img/logo_mercator_sprite.png) no-repeat;			
+				width: 194px;
+				height: 50px;
+				margin-top: 8px;
+				background-size: 180px 100px;
+				background-position: 0px -50px;
+			}
 		.logo-menu ul li.rental { background: url(../img/bg-rental-icon.png) right bottom no-repeat; }
 		.logo-menu ul li a {
 			color: rgb(102, 102, 102);
@@ -188,7 +215,7 @@ section.search {
 	-ms-box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
 }
 	.search form {
-		display: inline-block;
+		display: inline;
 		line-height: 64px;
 	}
 		.search input[type='text'] {
