@@ -12,6 +12,14 @@ $(document).ready(function() {
 	});
 });
 
+var $h = jQuery.noConflict();
+$h(document).ready(function() {
+    $h('a[href=#top]').click(function(){
+        $h('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+});
+
 var $j = jQuery.noConflict();
 $j('#slider1').bxSlider({
   captions: true,
@@ -33,12 +41,4 @@ $j('#slider3').bxSlider({
   moveSlides: 1,
   slideMargin: 30,
   pause: 3000
-});
-
-var $h = jQuery.noConflict();
-$h(document).ready(function() {
-    $h('a[href=#top]').click(function(){
-        $h('html, body').animate({scrollTop:0}, 'slow');
-        return false;
-    });
 });
