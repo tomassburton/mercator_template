@@ -1,4 +1,5 @@
-$(document).ready(function() {
+var $r = jQuery.noConflict();
+$r(document).ready(function() {
 	$(".modal").fancybox({
 		maxWidth	: 900,
 		maxHeight	: 800,
@@ -18,6 +19,30 @@ $h(document).ready(function() {
         $h('html, body').animate({scrollTop:0}, 'slow');
         return false;
     });
+});
+
+$('ul.tabs').each(function(){
+  var $active, $content, $links = $(this).find('a');
+  $active = $($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+  $active.addClass('active');
+  $content = $($active.attr('href'));
+
+  $links.not($active).each(function () {
+    $($(this).attr('href')).hide();
+  });
+
+  $(this).on('click', 'a', function(e){
+    $active.removeClass('active');
+    $content.hide();
+
+    $active = $(this);
+    $content = $($(this).attr('href'));
+
+    $active.addClass('active');
+    $content.show();
+
+    e.preventDefault();
+  });
 });
 
 var $j = jQuery.noConflict();
