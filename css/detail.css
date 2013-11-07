@@ -7,7 +7,13 @@
 	float: left;
 	width: 210px;
 	height: 150px;
-	margin: 0px 20px 20px 0px;
+	margin: 0px 30px 20px 0px;
+	
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	-o-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	-ms-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 .detail-info {
 	font-family: 'Open Sans';
@@ -25,7 +31,7 @@
 		font-size: 18px;
 		font-weight: 700;
 	}
-	.detail-info table { width: 440px; text-align: center; margin: 20px 0; }
+	.detail-info table { width: 430px; text-align: center; margin: 20px 0; }
 	.detail-info table td, .detail-info table th { padding: 5px; }
 	.detail-info table thead { background: rgba(119, 119, 119, .4); color: white; }
 	.detail-info table th { font-weight: 600;  }
@@ -41,7 +47,7 @@
 		display: block;
 		float: left;
 		width: 210px;
-		margin: 0 20px 0px 0;
+		margin: 0 30px 0px 0;
 	}
 		.add-to h3 {
 			border-bottom: 1px solid rgba(102, 102, 102, 0.1);
@@ -80,19 +86,52 @@
 			.add-to button:hover {
 				background: rgb(247, 148, 29);
 			}
-	.tab-wrapper ul {
+	.tab-wrapper ul.tabs {
 		list-style-type: none;
 		display: inline-block;
 		border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+		margin-bottom: 12px;
 	}
-		.tab-wrapper ul li {
+		.tab-wrapper ul.tabs li {
 			float: left;
 			font-size: 16px;
 			font-weight: 300;
-			width: 146px;
+			width: 143px;
 			text-align: center;
 		}
-		.tab-wrapper ul li a {
+		.tab-wrapper ul.tabs li a {
 			padding: 5px 5px 5px 5px;
 			display: block;
+			text-decoration: none;
+			color: rgb(153, 153, 153);
 		}
+		.tab-wrapper ul.tabs li a.active {
+			background: rgb(247, 148, 29);
+			color: white;
+		}
+	ul.list-items {
+		border: none;
+		font-family: Arial;
+		list-style-type: none;
+	}
+		ul.list-items {
+			font-size: 13px;
+		}
+		ul.list-items li:before {
+			font-family: 'icomoon';
+			content: "\e6c9";
+			color: rgba(102, 102, 102, 0.3);
+			padding-right: 5px;
+			font-size: 10px;
+		}
+		
+		ul.list-items.download li:before {
+			font-family: 'icomoon';
+			content: "\e660";
+			color: rgba(102, 102, 102, 0.3);
+			padding-right: 5px;
+			font-size: 15px;
+			vertical-align: middle;
+		}
+		ul.list-items.download li a { color:rgb(153, 153, 153); text-decoration: none; }
+		ul.list-items.download li a:hover { color: rgb(119, 119, 119); text-decoration: underline; }
