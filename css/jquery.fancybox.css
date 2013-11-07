@@ -96,7 +96,7 @@
 #reservation table thead { background: rgb(247, 148, 29); color:white; }
 #reservation table thead th { font-weight: 600; font-family: 'Open Sans'; }
 #reservation table tr { border-bottom: 1px solid rgba(239, 239, 239, 1); }
-#reservation table td:first-child, th:first-child {text-align: left; width: 30%; padding: 10px 10px; font-weight: 600; }
+#reservation table td:first-child, #reservation table th:first-child {text-align: left; width: 30%; padding: 10px 10px; font-weight: 600; }
 #reservation a.button, #sign a.button {
 	padding: 8px;
 	display: inline-block;
