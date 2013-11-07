@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Detail template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" href="css/main.css">       
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">Používáte <strong>zastaralou</strong> verzi prohlížeče. Prosím <a href="http://browsehappy.com/">aktualizujte si prohlížeč</a> nebo <a href="http://www.google.com/chromeframe/?redirect=true">zapněte Google Chrome Frame</a>.</p>
+        <![endif]-->
+    
+        <header>
+        	<section class="top" name="top">
+        		<div class="container">
+	        		<p class="call"><i class="icon-phone"></i> volejte <span>+420 123 456 789</span></p>
+	        		<ul class="log">
+	        			<li><i class="icon-user"></i> <a href="#sign" class="modal">Přihlášen: <span>Michal Pavel</span></a></li>
+	        			<li><i class="icon-cart"></i> <a href="#reservation" class="modal">Rezervace (3)</a></li>
+	        		</ul>
+        		</div>
+        	</section>
+        	<section class="logo-menu">
+        		<div class="container">
+        		<span class="left-up"></span>
+	        		<ul>
+		        		<li class="logo"><a href="#" title="MERCATOR s.r.o. - Zemní, elektrmontážní a stavební práce">Logo</a></li>
+		        		<li><a href="#">Domů</a></li>
+		        		<li><a href="#">O společnosti</a></li>
+		        		<li><a href="#">Nabídka služeb</a></li>
+		        		<li><a href="#">Kontakty</a></li>
+		        		<li class="rental active"><a href="#">Půjčovna</a></li>
+	        		</ul>
+        		</div>
+        	</section>
+        	<section class="slider">
+        		<div class="container">
+	        		<ul class="bxslider" id="slider1">
+	        			<li>
+	        				<p class="title">velký výběr nářadí stihl</p>
+	        				<img src="storage/slider-img/slider01.png">	        				
+	        			</li>
+	        			<li>
+	        				<p class="title">velký výběr nářadí hilti</p>
+	        				<img src="storage/slider-img/slider02.png">
+	        			</li>
+	        		</ul>
+        		</div>
+        	</section>
+        	<section class="search">
+        		<div class="container">
+        			<span class="right-down"></span>
+        			<form action="#">
+        				<input type="text" class="searching" placeholder="Rychlé vyhledávání zboží a informací">
+        				<button title="Hledat" type="submit"><i class="icon-search"></i></button>
+        			</form>
+        			<p class="claim">zemní, elektrmontážní a stavební práce</p>
+        		</div>
+        	</section>
+        </header>
+        
+        <section class="content">
+        	<section class="grey-content">
+        		<div class="container clearfix">
+        			<section class="left">
+        				<h2>Detail nářadí</h2>
+        				<ul class="bread-nav">
+        					<li><a href="#">Domů</a></li>
+        					<li><a href="#">Půjčovna</a></li>
+        					<li><a href="#">Nářadí</a></li>
+        					<li>Detail nářadí</li>
+        				</ul>
+        				<div class="detail-info">
+	        				<figure class="detail-img">
+	        					<img src="http://placehold.it/210x150/fff">
+	        				</figure>
+        				
+        					<h3>Cena od <span>399</span> Kč</h3>
+        					<table class="clearfix">
+        						<thead>
+	        						<th>Doba výpůjčky</th>
+	        						<th>Cena bez DPH</th>
+	        						<th>Cena s DPH</th>
+        						</thead>
+        						<tbody>
+        							<tr>
+	        							<td>1-5 hodin</td>
+	        							<td>300 Kč</td>
+	        							<td>399 Kč</td>
+        							</tr>
+        							<tr>
+	        							<td>1-3 dny</td>
+	        							<td>1300 Kč</td>
+	        							<td>1399 Kč</td>
+        							</tr>
+        							<tr>
+	        							<td>4-8 hodin</td>
+	        							<td>2300 Kč</td>
+	        							<td>2399 Kč</td>
+        							</tr>
+        						</tbody>
+        					</table>
+        					
+        					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a nulla venenatis, 
+        					congue diam non, egestas elit. Vivamus vehicula egestas tempus. Etiam aliquam dolor et 
+        					diam malesuada dignissim vel vel quam. Curabitur non neque euismod, posuere nisl at, 
+        					consectetur justo. Aliquam mi neque, gravida sit amet gravida vitae, laoreet interdum 
+        					neque. Donec vel odio id lectus pellentesque accumsan. </p>
+        					
+        					<form class="add-to">
+        						<h3>Rezervovat</h3>
+        						<label for="date-from">Půjčit od: </label><input type="date" name="date-from">
+        						<label for="date-to">Půjčit do: </label><input type="date" name="date-to">
+        						<label for="quantity">Množství: </label><input type="number" value="1" name="quantity">
+        						<button type="submit">Vložit do košíku</button>
+        					</form>
+        					
+        					<div class="tab-wrapper">
+        						<ul>
+        							<li><a href="#obecne">Obecné</a></li>
+        							<li><a href="#technicke">Technické údaje</a></li>
+        							<li><a href="#navod">Návody</a></li>
+        						</ul>
+        						<div id="obecne">
+        							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a nulla venenatis, 
+		        					congue diam non, egestas elit. Vivamus vehicula egestas tempus. Etiam aliquam dolor et 
+		        					diam malesuada dignissim vel vel quam. Curabitur non neque euismod, posuere nisl at, 
+		        					consectetur justo. Aliquam mi neque, gravida sit amet gravida vitae, laoreet interdum 
+		        					neque. Donec vel odio id lectus pellentesque accumsan. </p>
+        						</div>
+        						<div id="technicke">2
+        						</div>
+        						<div id="navod">3
+        						</div>
+        					</div>
+        				</div>
+        			</section>
+        			<section class="right">
+        				<div class="side-nav">
+        					<h3>nabízíme</h3>
+        					<ul class="nav">
+        						<li><a href="#">Nářadí</a></li>
+        						<li class="active"><a href="#">Stavební technika</a></li>
+        						<li class="sub"><a href="#">Stavební technika 1.1</a></li>
+        						<li class="sub"><a href="#">Stavební technika 1.2</a></li>
+        						<li><a href="#">Příslušenství - odkaz, který je na dva řádky</a></li>
+        						<li><a href="#">Zahradní technika</a></li>
+        					</ul>
+        				</div>
+        				<h2>Rezervace</h2>
+        				<div class="reservation-box">
+        					<p class="items">3 položky v ceně <span>1.678 Kč</span></p>
+        					<a href="#reservation" class="modal">Přehled rezervovaných položek</a>
+        				</div>
+        			</section>
+        		</div>
+        	</section>
+        </section>
+        
+        <footer>
+        	<div class="container clearfix">
+        		<p class="left">© 2013 <a href="#">MERCATOR s.r.o.</a> Všechna práva vyhrazena.</p>
+        		<ul class="right">
+        			<li><a href="#">O nás</a></li>
+        			<li><a href="#">Obchodní podmínky</a></li>
+        			<li><a href="#">Certifikáty a osvědčení</a></li>
+        			<li><a href="#">Kontakty</a></li>
+        			<li><a href="#top">Nahoru <i class="icon-arrow-up7"></i></a></li>
+        		</ul>
+        	</div>
+        </footer>
+        
+        <div style="display:none">
+        	<div id="reservation" class="clearfix"><a href="javascript:$.fancybox.close();" class="close"><i class="icon-cross"></i></a>
+        		<h3>Přehled položek k rezervování</h3>
+        		<p>Zde jsou položky, které máte vybrány k zarezervování. K dokončení rezervace přejděte prosím do registračního košíku.</p>
+        			<table>
+        				<thead>
+        					<tr>
+        						<th>Název</th>
+        						<th>Cena za den</th>
+        						<th>Množství</th>
+        						<th>Od</th>
+        						<th>Do</th>
+        					</tr>
+        				</thead>
+        				<tbody>
+        					<tr>
+        						<td>Nůžky na plech elektrické METABO KU 6872</td>
+        						<td>219 Kč</td>
+        						<td>20 ks</td>
+        						<td>21.10.2013</td>
+        						<td>23.10.2013</td>
+        					</tr>
+        					<tr>
+        						<td>Vrtačka úhlová BOSCH GWB 10 RE</td>
+        						<td>399 Kč</td>
+        						<td>1 ks</td>
+        						<td>21.10.2013</td>
+        						<td>23.10.2013</td>
+        					</tr>
+        					<tr>
+        						<td>Diamantový kotouč TYROLIT SECUR 450</td>
+        						<td>21 Kč</td>
+        						<td>7 ks</td>
+        						<td>21.10.2013</td>
+        						<td>23.10.2013</td>
+        					</tr>
+        				</tbody>
+        			</table>
+        		<a href="#" class="button"><i class="icon-cart"></i> Rezervační košík</a>
+        	</div>
+        </div>
+        
+        <div style="display:none">
+        	<div id="sign" class="clearfix"><a href="javascript:$.fancybox.close();" class="close"><i class="icon-cross"></i></a>
+        		<h3>Přihlášen jako</h3>
+        		<table>
+        			<tr>
+        				<td>Jméno:</td>
+        				<td>Michal</td>
+        			</tr>
+        			<tr>
+        				<td>Příjmení:</td>
+        				<td>Pavel</td>
+        			</tr>
+        			<tr>
+        				<td>Firma:</td>
+        				<td>MERCATOR s.r.o.</td>
+        			</tr>
+        			<tr>
+        				<td>Poslední přihlášení:</td>
+        				<td>04.11.2013</td>
+        			</tr>
+        		</table>
+        		<a href="#" class="button"><i class="icon-cog"></i> Administrace účtu</a>
+        		<a href="#" class="button"><i class="icon-logout"></i> Odhlásit se</a>
+        	</div>
+        </div>
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/fancybox.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
