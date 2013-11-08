@@ -290,6 +290,45 @@ section.works {
 			display: block;
 			background: url(../img/long-line.png) left bottom no-repeat;
 		}
+		
+		/*  STYLY PRO CLANEK
+		*/
+		.article p, .article ul {
+			margin-bottom: 10px;
+		}
+		.article h3, .article h4, .article h5, .article h6 {
+			font-family: 'Open Sans';
+			font-weight: 400;
+			color: rgb(119, 119, 119);
+			margin-bottom: 3px;
+		}
+			.article h3 {font-size: 17px;} .article h4 {font-size: 16px;} .article h5 {font-size: 15px;} .article h6 {font-size: 14px;}
+		.article a { text-decoration: underline; color: rgb(119,119,119); }
+		.article a:hover { text-decoration: underline; color: rgb(52, 170, 220); }
+		
+		.article .tab-wrapper { padding-top: 10px; }
+		.article .tab-wrapper ul.tabs {
+			list-style-type: none;
+			display: table;
+			background: rgba(102, 102, 102, 0.1);
+			margin-bottom: 12px;
+			width: 100%;
+		}
+			.article .tab-wrapper ul.tabs li {
+				font-family: 'Open Sans';
+				font-weight: 400;
+				float: none;
+				display: table-cell;
+				text-align: center;
+				width: auto;
+				font-size: 13px;
+			}
+			.article .tab-wrapper ul.tabs li:before { content: ""; padding: 0px; }
+			.article .tab-wrapper ul.tabs li a.active {
+				background: rgb(52, 170, 220);
+				color: rgb(255, 255, 255);
+			}
+		
 			article {
 				padding: 20px 0px;
 				border-bottom: 1px solid rgba(102, 102, 102, .1);
@@ -312,7 +351,7 @@ section.works {
 				display: block;
 			}
 			h1 a:hover { text-decoration: underline; }
-			article > span {
+			article > span, span.date {
 				font-family: 'Open Sans';
 				font-weight: 700;
 				color: rgb(195, 195, 195);
@@ -374,6 +413,8 @@ section.works {
 			}
 			a.rental-butt:hover { text-decoration: underline; }
 			a.rental-butt > i { font-size: 18px; }
+			
+			.nav li.active.default { background: rgb(52, 170, 220); padding:0 8px 0 8px; }
 			
 /* works 
 			   style  */

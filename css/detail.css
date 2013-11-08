@@ -22,6 +22,7 @@
 	.detail-info h3 {
 		font-size: 16px;
 		font-weight: 300;
+		color: rgb(119,119,119);
 		/*color: white;
 		background: rgb(247, 148, 29);
 		padding: 5px;
@@ -33,7 +34,7 @@
 	}
 	.detail-info table { width: 430px; text-align: center; margin: 20px 0; }
 	.detail-info table td, .detail-info table th { padding: 5px; }
-	.detail-info table thead { background: rgba(119, 119, 119, .4); color: white; }
+	.detail-info table thead {  color: white; background: rgb(247, 148, 29); }
 	.detail-info table th { font-weight: 600;  }
 	.detail-info tr { border-bottom: 1px solid rgb(229, 229, 229); } .detail-info tr:last-child { border: none; }
 	
@@ -42,6 +43,9 @@
 		text-align: justify;
 		margin-bottom: 20px;
 	}
+		.detail-info p:last-child {
+			margin: 0;
+		}
 	
 	.add-to {
 		display: block;
@@ -103,21 +107,22 @@
 			padding: 5px 5px 5px 5px;
 			display: block;
 			text-decoration: none;
-			color: rgb(153, 153, 153);
+			color: rgb(119,119,119);
 		}
 		.tab-wrapper ul.tabs li a.active {
-			background: rgb(247, 148, 29);
+			/*background: rgb(247, 148, 29);*/ background: rgba(119, 119, 119, .4);
 			color: white;
 		}
-	ul.list-items {
+	ul.list-items, .article ul {
 		border: none;
 		font-family: Arial;
 		list-style-type: none;
 	}
-		ul.list-items {
+		ul.list-items li, .article ul li {
 			font-size: 13px;
+			line-height: 19px;
 		}
-		ul.list-items li:before {
+		ul.list-items li:before, .article ul li:before {
 			font-family: 'icomoon';
 			content: "\e6c9";
 			color: rgba(102, 102, 102, 0.3);
