@@ -67,27 +67,6 @@ textarea {
 /* ==========================================================================
    Header Styles
    ========================================================================== */
-.left-up {
-	z-index: 12;
-	background: url(../img/left-up.png) no-repeat;
-	height: 55px;
-	overflow: hidden;
-	position: absolute;
-	top: 63px;
-	width: 600px;
-	left: -600px;
-}
-.right-down {
-	z-index: 13;
-	background: url(../img/right-down.png) no-repeat;
-	height: 55px;
-	overflow: hidden;
-	position: absolute;
-	bottom: 63px;
-	width: 600px;
-	right: -600px;
-}
-
 section.top {
 	z-index: 10;
 	position: relative;
@@ -104,9 +83,11 @@ section.top {
 		p.call span { font-size: 13px; font-weight: 600; }
 		p.call i { font-size: 15px; }
 	ul.log {
-		float: right;
 		list-style-type: none;
 		line-height: 41px;
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
 		ul.log li {
 			display: inline-block;
@@ -125,14 +106,9 @@ section.top {
 section.logo-menu {
 	z-index: 9;
 	position: relative;
-	height: 64px;
-	background: white;
+	height: 118px;
 	
-	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-	-o-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-	-ms-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+	background: url(../img/up-bumber.png) no-repeat center;
 }
 	.logo-menu ul {
 		list-style-type: none;
@@ -187,12 +163,12 @@ section.slider {
 	position: relative;
 	background: url(../img/slider_bg.png) center;
 	height: 300px!important;
-	margin: -5px 0px;
+	margin: -54px 0;
 }	
 	p.title {
 		position: absolute;
 		right: 0px;
-		bottom: 20px;
+		bottom: 30px;
 		display: block;
 		padding: 20px;
 		color: rgb(255, 255, 255);
@@ -205,18 +181,15 @@ section.slider {
 section.search {
 	z-index: 8;
 	position: relative;
-	height: 64px;
-	background: white;
+	height: 118px;
 	
-	box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
-	-o-box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
-	-ms-box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
+	background: url(../img/down-bumber.png) no-repeat center;	
 }
+	.search-cont {
+		padding-top: 70px;
+	}
 	.search form {
 		display: inline;
-		line-height: 64px;
 	}
 		.search input[type='text'] {
 			font-family: 'Open Sans';
@@ -246,12 +219,14 @@ section.search {
 			color: rgb(153, 153, 153);
 		}
 	p.claim {
-		float: right;
+		display: inline;
 		text-transform: uppercase;
 		font-size: 15px;
 		font-weight: 600;
-		line-height: 64px;
 		color: rgb(119, 119, 119);
+		position: absolute;
+		right: 0;
+		bottom: 7px;
 	}
 
 /* ==========================================================================
