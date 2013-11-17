@@ -303,6 +303,14 @@ section.works {
 				background: rgb(52, 170, 220);
 				color: rgb(255, 255, 255);
 			}
+			
+			.gallery {
+				margin: 10px 0;
+				text-align: center;
+			}
+				.gallery img:nth-child(4n+4) {
+					margin-right: 0;
+				}
 		
 			article {
 				padding: 20px 0px;
@@ -390,6 +398,8 @@ section.works {
 			a.rental-butt > i { font-size: 18px; }
 			
 			.nav li.active.default { background: rgb(52, 170, 220); padding:0 8px 0 8px; }
+			.nav li.active.sub { background: none; text-decoration: underline; color: rgb(119, 119, 119); padding:0px; }
+			.nav li.active.sub a { color: rgb(119, 119, 119); }
 			
 /* works 
 			   style  */
@@ -469,6 +479,32 @@ footer {
 		footer ul li a:hover { text-decoration: underline; }
 
 
+/* ==========================================================================
+   Alert classes
+   ========================================================================== */
+.alert {
+	border-radius: 3px 3px 3px 3px;
+	padding: 15px;
+	font-size: 14px;
+	font-family: 'Open Sans'!important;
+}
+	.alert span {
+		font-size: 17px;
+		font-weight: 600;
+		display: block;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+.success {
+	background: rgba(0, 166, 70, .5);
+	border: 1px solid rgba(0, 166, 70, 1);
+	color: #008538;
+}
+.error {
+	background: rgba(166, 0, 0, .5);
+	border: 1px solid rgba(166, 0, 0, 1);
+	color: #850000;
+}
 
 
 

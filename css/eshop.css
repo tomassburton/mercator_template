@@ -137,3 +137,11 @@ ul.log li span { font-weight: 600; }
 	.reservation-box a:hover {
 		text-decoration: underline;
 	}
+	
+.souhrn {
+	text-align: left!important;
+}
+	.souhrn td.bold {
+		font-weight: 600;
+		font-size: 14px;
+	}
