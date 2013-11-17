@@ -7,3 +7,5 @@ Mercator templates
 2. Eshop
 3. Detail eshop
 4. Detail produktu
+5. Boční navigace
+6. Uživatelská administrace
