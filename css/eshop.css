@@ -145,3 +145,116 @@ ul.log li span { font-weight: 600; }
 		font-weight: 600;
 		font-size: 14px;
 	}
+
+/* ==========================================================================
+   KOŠÍK REZERVACE UPRAVY
+   ========================================================================== */
+.reservation-cart p {
+	font-family: 'Open Sans'; margin: 20px 0px 0px 0px;
+}
+.reservation-cart input {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	border: 1px solid rgba(153, 153, 153, .4);
+	outline: none;
+	padding: 5px;
+	color: rgb(153, 153, 153);
+	width: 120px;
+}
+.reservation-cart table { width: 100%; text-align: center; margin: 20px 0; font-family: 'Open Sans';}
+.reservation-cart table thead { background: rgb(247, 148, 29); color:white; }
+.reservation-cart table thead th { font-weight: 600; font-family: 'Open Sans'; }
+.reservation-cart table tr { border-bottom: 1px solid rgba(229, 229, 229, 1); }
+.reservation-cart table td:first-child { color: rgb(119, 119, 119); }
+.reservation-cart table td:first-child, .reservation-cart table th:first-child {text-align: left; width: 25%; padding: 10px 10px; font-weight: 600; }
+.reservation-cart table td:nth-child(2), .reservation-cart table td:nth-child(3), .reservation-cart table td:nth-child(4) { width: 13%; }
+.reservation-cart table td:nth-child(5), .reservation-cart table td:nth-child(6) { width: 15%; }
+
+.reservation-cart a { color: rgb(153, 153, 153); text-decoration: none; }
+.reservation-cart table a { font-size: 14px; }
+.reservation-cart a:hover { color: rgb(119, 119, 119); text-decoration: underline; }
+.reservation-cart a.edit:hover { color: rgb(0, 133, 56); }
+.reservation-cart a.delete:hover { color: rgb(133, 0, 0); }
+
+.total {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 27px;
+	width: 220px;
+	font-family: 'Open Sans';
+	color: rgb(119, 119, 119);
+	background: rgb(255, 255, 255);
+	padding: 23px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	-o-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	-ms-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+	.total span:nth-child(1), .total span:nth-child(3) { width: 120px; display: inline-block; }
+	.total span:nth-child(2), .total span:nth-child(4) { width: 90px; display: inline-block; text-align: right; font-weight: 600; }
+
+.reservation-cart button.button {
+	font-family: 'Open Sans';
+	padding: 8px;
+	display: inline-block;
+	background: rgb(247, 148, 29);
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	float: right;
+	border: none;
+	outline: none;
+}
+
+/* ==========================================================================
+   Static Styles - PŘIHLÁŠENÍ/REGISTRACE
+   ========================================================================== */
+p.log-reg { font-family: 'Open Sans'; margin: 20px 0px 0px 0px; }
+.log-reg-form {
+	width: 300px;
+	margin: 20px 0;
+}
+	.log-reg-form input[type='email'], .log-reg-form input[type='password'], .log-reg-form input[type='text'] {
+			font-family: 'Open Sans';
+			font-weight: 300;
+			font-size: 14px;
+				
+			padding: 8px;
+			width: 282px;
+			margin-top: -1px;
+			background: rgb(255, 255, 255);
+			border: 1px solid rgba(153, 153, 153, .4);
+			outline: none;
+	}
+	.log-reg-form button, #registration button {
+		background: rgba(153, 153, 153, .4);
+		margin-top: 20px;
+		padding: 8px 10px;
+		border: none;
+		font-family: 'Open Sans';
+		font-weight: 300;
+		font-size: 14px;
+		float: right;
+		display: block;
+		color: white;
+		}
+	.log-reg-form button:hover { background: rgba(153, 153, 153, 1); }
+	.log-reg-form button.reg { margin-top: 0!important; }
+	a {
+		color: rgb(119, 119, 119);
+	}
+	.log-reg-form label {
+		display: inline-block;
+		line-height: 36px;
+		width: 40%;
+	}
+	.log-reg-form fieldset { margin: 10px 0px 15px 0px; }
+	.log-reg-form select { width: 50%; }
+	.log-reg-form legend {
+		width: 100%;
+		text-transform: uppercase;
+		border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+		font-weight: 600;
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+	}
