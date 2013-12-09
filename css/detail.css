@@ -32,11 +32,14 @@
 		font-size: 18px;
 		font-weight: 700;
 	}
+	.detail-info span.warehouse { font-size: 14px; font-weight: 300; float: right; }
+	.detail-info span.warehouse > span { font-size: 15px; font-weight: 600; }
 	.detail-info table { width: 430px; text-align: center; margin: 20px 0; }
 	.detail-info table td, .detail-info table th { padding: 5px; }
 	.detail-info table thead {  color: white; background: rgb(247, 148, 29); }
 	.detail-info table th { font-weight: 600;  }
 	.detail-info tr { border-bottom: 1px solid rgb(229, 229, 229); } .detail-info tr:last-child { border: none; }
+	.detail-info tfoot { background: rgba(119, 119, 119, 0.4); color: white; font-weight: 600; }
 	
 	.detail-info p {
 		font-family: 'Arial', sans-serif;

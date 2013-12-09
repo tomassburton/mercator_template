@@ -173,8 +173,26 @@ ul.log li span { font-weight: 600; }
 .reservation-cart a { color: rgb(153, 153, 153); text-decoration: none; }
 .reservation-cart table a { font-size: 14px; }
 .reservation-cart a:hover { color: rgb(119, 119, 119); text-decoration: underline; }
-.reservation-cart a.edit:hover { color: rgb(0, 133, 56); }
-.reservation-cart a.delete:hover { color: rgb(133, 0, 0); }
+.reservation-cart a.delete {
+	background: url(../img/input-delete_bg.png) no-repeat;
+	background-size: 12px 24px;
+	background-position: 0 0;
+	width: 12px;
+	height: 12px;
+	text-indent: -9999px;
+	display: block;
+}
+.reservation-cart a.delete:hover { background-position: 0 -12px; }
+.reservation-cart input.edit[type="submit"] {
+	background: url(../img/input-edit_bg.png) no-repeat;
+	background-size: 14px 28px;
+	background-position: 0 0;
+	border: none;
+	outline: none;
+	width: 14px;
+	height: 14px;
+}
+.reservation-cart input.edit[type="submit"]:hover { background-position: 0 -14px; }
 
 .total {
 	display: inline-block;
