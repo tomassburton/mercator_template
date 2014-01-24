@@ -165,6 +165,22 @@ section.slider {
 	height: 300px!important;
 	margin: -54px 0;
 }	
+
+section.no.slider {
+	z-index: 5;
+	position: relative;
+	background: url(../img/slider_bg.png) center;
+	height: 180px!important;
+	margin: -54px 0;
+}
+	section.no.slider img {
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+		-webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+		-moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+		-o-box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+		-ms-box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+	}
+
 	p.title {
 		position: absolute;
 		right: 0px;
